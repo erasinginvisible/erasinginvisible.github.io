@@ -4,90 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NeurIPS 2024 Watermarking Competition</title>
-    <style>
-        body, html {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .header {
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0a/The_Great_Wave_off_Kanagawa.jpg');
-            height: 50vh;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 2px 2px 4px #000000;
-        }
-        .header h1 {
-            text-align: center;
-            width: 100%;
-            font-size: 2.8em;
-            padding: 20px;
-            line-height: 1.4;
-        }
-        .nav {
-            background: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            font-size: 1.2em;
-        }
-        .nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        .nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .content {
-            padding: 20px;
-            text-align: center;
-            min-height: 30vh;
-            font-size: 1.5em;
-        }
-        .footer {
-            text-align: center;
-            padding: 10px;
-            background: #333;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon.svg" type="image/x-icon">
 </head>
 <body>
-    <div class="header">
-        <h1>NeurIPS 2024 Competition: Erasing the Invisible:<br>A Stress-Test Challenge for Image Watermarks</h1>
-    </div>
-    <div class="nav">
-        <a href="#home">HOME</a>
-        <a href="#getting-started">GETTING STARTED</a>
-        <a href="#tracks">TRACKS</a>
-        <a href="#prizes">PRIZES</a>
-        <a href="#leaderboards">LEADERBOARDS</a>
-        <a href="#workshop">WORKSHOP</a>
-        <a href="#faq">FAQ</a>
-    </div>
-    <div id="home" class="content">
-        <p>Coming Soon</p>
-        <p>Link to our paper: <a href="https://wavesbench.github.io/" target="_blank">WAVES Benchmark</a></p>
-    </div>
-    <div id="getting-started" class="content">
-    </div>
-    <div id="tracks" class="content">
-    </div>
-    <div id="prizes" class="content">
-    </div>
-    <div id="leaderboards" class="content">
-    </div>
-    <div id="workshop" class="content">
-    </div>
-    <div id="faq" class="content">
-    </div>
-    <div class="footer">
-        <p>NeurIPS 2024 Competition - Erasing the Invisible: A Stress-Test Challenge for Image Watermarks</p>
-    </div>
+<div class="header">
+    <h1>NeurIPS 2024 Competition: Erasing the Invisible:<br>A Stress-Test Challenge for Image
+        Watermarks</h1>
+</div>
+<div class="nav">
+    <a href="index.html">HOME</a>
+    <a href="getting-started.html">GETTING STARTED</a>
+    <a href="tracks.html">TRACKS</a>
+    <a href="prizes.html">PRIZES</a>
+    <a href="leaderboards.html">LEADERBOARDS</a>
+    <a href="workshop.html">WORKSHOP</a>
+    <a href="faq.html">FAQ</a>
+</div>
+<div class="content">
+    <h2>Welcome!</h2>
+    <p>Welcome to "Erasing the Invisible" at NeurIPS 2024—a cutting-edge competition designed to
+        rigorously stress-test image watermarks. This competition is divided into <b>two tracks:
+            Black-box Attacks and Beige-box Attacks</b>. It aims to validate the robustness of image
+        watermarks under various conditions of visibility and the attackers' knowledge levels.
+        Competitors will attempt to remove watermarks while maintaining the quality of the images.
+        Evaluations will be based on two criteria: the effectiveness of watermark removal and the
+        preservation of image quality. This competition is inspired by the <a
+                href="https://wavesbench.github.io/" target="_blank"> WAVES</a> benchmark.</p>
+
+    <p><b>Prizes:</b> There is a $3000 prize pool!</p>
+    <p><b>Join our <a
+            href="https://join.slack.com/t/erasingtheinvisible/shared_invite/zt-2m8abcw3m-SmG~focrUH6npGxxBxh03g">Slack</a>
+        now!</b></p>
+    <h2>News</h2>
+    <ul>
+        <li><b>July 10</b>: Competition announcement</li>
+    </ul>
+    <!--    <h2>Overview</h2>-->
+    <!--    <p>Link to our paper: <a href="https://wavesbench.github.io/" target="_blank">WAVES-->
+    <!--        Benchmark</a></p>-->
+    <h2>Important Dates</h2>
+    <ul>
+        <li><b>July 18:</b> Registration opens</li>
+        <li><b>July 18 - Aug 18:</b> Warmup phase</li>
+        <li><b>Aug 18 - Oct 31:</b> Development phase</li>
+        <li><b>Oct 31:</b> Registration closes, submission closes</li>
+        <li><b>Nov 20:</b> Winning team announcement</li>
+    </ul>
+    <h2>Rules</h2>
+    <ul>
+        <li><b>Registration:</b> This competition is open to all. Participants must be registered
+            with their email address before submitting an entry. One account per participant. Double
+            registration is not allowed. Every participant can only join one team.
+            Teams may participate in multiple tracks. There is no limit on team size.
+        </li>
+        <li><b>Submission Requirements:</b> 1) Participants only need to submit images after their attacks.
+            2) The submitted images must follow the guidelines of naming and formatting.
+            3) The exploitation of loopholes (such as the leakage of underlying model) is prohibited. Participants are encouraged to report any detected loopholes.
+            4) During the competition period, we encourage general discussions, while teams are not allowed to share their codes with other teams.
+        </li>
+        <li><b>Prize Eligibility:</b> We will provide monetary prizes to the top teams for each track, subject to the reproducibility and legitimation of the methods.
+            For prize eligibility, leading teams must at least provide their methods, code, and models to the organizers for reproduction and legitimation checking.
+            Leading teams will also be invited to give a talk in the competition workshop.
+        </li>
+        <li><b>Rule Adaptation Clause:</b> By registering, participants agree that adjustments may be made in response to unexpected situations. We will strive for fair resolutions to address any unforeseen issues.
+
+
+        </li>
+
+    </ul>
+
+
+<!--    <h2>Organizers</h2>-->
+
+    <h2>Contact</h2>
+    <ul>
+        <li> To contact organizers, please email <a href="mailto:erasinginvisible@googlegroups.com">erasinginvisible@googlegroups.com</a>
+        </li>
+        <li> Please join our <a
+            href="https://join.slack.com/t/erasingtheinvisible/shared_invite/zt-2m8abcw3m-SmG~focrUH6npGxxBxh03g">Slack</a> to receive the latest announcements, engage in discussions, find teammates, and ask questions.
+        </li>
+    </ul>
+</div>
+<div class="footer">
+    <p>NeurIPS 2024 Competition - Erasing the Invisible: A Stress-Test Challenge for Image
+        Watermarks</p>
+</div>
 </body>
 </html>
