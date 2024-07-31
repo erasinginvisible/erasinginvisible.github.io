@@ -60,6 +60,23 @@ body, html {
     color: white;
 }
 
+.sponsors-logos img {
+    width: 250px; /* or any size that fits your design */
+    height: auto;
+    margin: 10px 20px;
+    vertical-align: middle; /* Aligns the image vertically if text or other elements are present */
+}
+
+.sponsors-logos a {
+    display: inline-block; /* Ensures the links are aligned nicely */
+    margin: 0 10px; /* Space between logos */
+}
+
+.responsive-image {
+    width: 100%; /* Makes the image responsive and matches the container's width */
+    height: auto; /* Maintains the aspect ratio of the image */
+}
+
 /* Responsive design for screens narrower than 768px */
 @media (max-width: 768px) {
     .header {
@@ -87,6 +104,10 @@ body, html {
 
     .footer {
         padding: 5px; /* Reduce padding in the footer */
+    }
+
+    .sponsors-logos img {
+        width: 80px; /* Smaller logos on smaller screens */
     }
 }
 
