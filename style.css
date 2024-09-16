@@ -108,6 +108,16 @@ figcaption {
     padding: 5px; /* Padding around the caption text */
 }
 
+pre {
+        background-color: #f5f5f5;
+        padding: 15px;
+        font-family: monospace;
+        white-space: pre-wrap;
+    }
+    code {
+        color: black;
+    }
+
 
 /* Medium Screen Devices: Tablets in Landscape Mode */
 @media (min-width: 768px) and (max-width: 1024px) {
