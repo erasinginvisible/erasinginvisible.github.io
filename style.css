@@ -214,3 +214,39 @@ pre {
         padding: 8px 15px;
     }
 }
+table {
+    width: 80%; /* Table takes the full width of the container */
+    border-collapse: collapse; /* Removes extra spacing between cells */
+    margin: 20px auto; /* Adds vertical spacing */
+    font-size: 0.8em; /* Matches your content font size */
+    text-align: left; /* Align text to the left for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+th, td {
+    padding: 12px 15px; /* Adds spacing inside cells */
+    border: 1px solid #ddd; /* Adds light borders between cells */
+}
+
+th {
+    background-color: #f4f4f4; /* Light gray background for header */
+    font-weight: bold; /* Bold text for header */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping for alternate rows */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Subtle hover effect */
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+    table {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+    th, td {
+        padding: 10px; /* Smaller padding */
+    }
+}
